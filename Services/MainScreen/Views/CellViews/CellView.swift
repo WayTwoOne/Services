@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CellView: View {
+    @ObservedObject var viewModel: ServicesViewModel
     var service: Service
     
     let width = UIScreen.main.bounds.width
@@ -15,7 +16,8 @@ struct CellView: View {
     
     var body: some View {
             Button {
-                print("Buttom Action")
+                viewModel.deleteComp(with: service.link)
+                viewModel.openSiteOrApplication(with: service.link)
             } label: {
                 HStack(spacing: 10) {
                     AsyncImage(url: URL(string: service.iconURL)) { image in
@@ -47,17 +49,3 @@ struct CellView: View {
             .frame(width: width, height: height * 0.09)
     }
 }
-
-//struct CellView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CellView(imageLoader: ImageLoader)
-//    }
-//}
-
-//if imageLoader.image != nil {
-//    Image(uiImage: imageLoader.image!)
-//        .resizable()
-//        .frame(width: width * 0.1, height: height * 0.06)
-//} else {
-//    Image.default
-//}

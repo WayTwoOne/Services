@@ -14,7 +14,7 @@ struct ServicesView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(viewModel.services, id: \.name) { item in
-                    CellView(service: item)
+                    CellView(viewModel: viewModel, service: item)
                 }
                 .navigationBarTitle("Сервисы", displayMode: .inline)
             }
@@ -23,10 +23,3 @@ struct ServicesView: View {
         }
     }
 }
-
-//struct ServicesView_Previews: PreviewProvider {
-//    static var viewModel = ServicesViewModel()
-//    static var previews: some View {
-//        ServicesView(imageLoader: ImageLoader(url: viewModel))
-//    }
-//}
