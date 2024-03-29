@@ -11,6 +11,13 @@
 		E760FDAB2BB6CF2B00E16066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760FDAA2BB6CF2B00E16066 /* ContentView.swift */; };
 		E760FDAD2BB6CF2D00E16066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E760FDAC2BB6CF2D00E16066 /* Assets.xcassets */; };
 		E760FDB02BB6CF2D00E16066 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E760FDAF2BB6CF2D00E16066 /* Preview Assets.xcassets */; };
+		E760FDB72BB6CF5B00E16066 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760FDB62BB6CF5B00E16066 /* Extention.swift */; };
+		E760FDBA2BB6CF8F00E16066 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760FDB92BB6CF8F00E16066 /* ServiceAPI.swift */; };
+		E760FDBD2BB6CFB700E16066 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760FDBC2BB6CFB700E16066 /* NetworkService.swift */; };
+		E760FDC32BB6CFF200E16066 /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760FDC22BB6CFF200E16066 /* ServicesViewModel.swift */; };
+		E760FDC52BB6D01C00E16066 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760FDC42BB6D01C00E16066 /* Model.swift */; };
+		E760FDC82BB6D04C00E16066 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760FDC72BB6D04C00E16066 /* ServicesView.swift */; };
+		E760FDCB2BB6D06800E16066 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760FDCA2BB6D06800E16066 /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		E760FDAA2BB6CF2B00E16066 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E760FDAC2BB6CF2D00E16066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E760FDAF2BB6CF2D00E16066 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E760FDB62BB6CF5B00E16066 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		E760FDB92BB6CF8F00E16066 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		E760FDBC2BB6CFB700E16066 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E760FDC22BB6CFF200E16066 /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
+		E760FDC42BB6D01C00E16066 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E760FDC72BB6D04C00E16066 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		E760FDCA2BB6D06800E16066 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,10 @@
 			children = (
 				E760FDA82BB6CF2B00E16066 /* ServicesApp.swift */,
 				E760FDAA2BB6CF2B00E16066 /* ContentView.swift */,
+				E760FDBE2BB6CFC500E16066 /* MainScreen */,
+				E760FDBB2BB6CF9700E16066 /* NetworkManager */,
+				E760FDB82BB6CF7700E16066 /* API */,
+				E760FDCC2BB6D1E000E16066 /* Extentions */,
 				E760FDAC2BB6CF2D00E16066 /* Assets.xcassets */,
 				E760FDAE2BB6CF2D00E16066 /* Preview Content */,
 			);
@@ -65,6 +83,81 @@
 				E760FDAF2BB6CF2D00E16066 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E760FDB82BB6CF7700E16066 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDB92BB6CF8F00E16066 /* ServiceAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E760FDBB2BB6CF9700E16066 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDBC2BB6CFB700E16066 /* NetworkService.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		E760FDBE2BB6CFC500E16066 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDBF2BB6CFCF00E16066 /* Models */,
+				E760FDC02BB6CFD400E16066 /* Views */,
+				E760FDC12BB6CFD900E16066 /* ViewModels */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		E760FDBF2BB6CFCF00E16066 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDC42BB6D01C00E16066 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E760FDC02BB6CFD400E16066 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDC62BB6D03400E16066 /* ServicesView */,
+				E760FDC92BB6D05D00E16066 /* CellViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E760FDC12BB6CFD900E16066 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDC22BB6CFF200E16066 /* ServicesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E760FDC62BB6D03400E16066 /* ServicesView */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDC72BB6D04C00E16066 /* ServicesView.swift */,
+			);
+			path = ServicesView;
+			sourceTree = "<group>";
+		};
+		E760FDC92BB6D05D00E16066 /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDCA2BB6D06800E16066 /* CellView.swift */,
+			);
+			path = CellViews;
+			sourceTree = "<group>";
+		};
+		E760FDCC2BB6D1E000E16066 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				E760FDB62BB6CF5B00E16066 /* Extention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E760FDC52BB6D01C00E16066 /* Model.swift in Sources */,
+				E760FDBD2BB6CFB700E16066 /* NetworkService.swift in Sources */,
 				E760FDAB2BB6CF2B00E16066 /* ContentView.swift in Sources */,
+				E760FDC32BB6CFF200E16066 /* ServicesViewModel.swift in Sources */,
+				E760FDC82BB6D04C00E16066 /* ServicesView.swift in Sources */,
+				E760FDB72BB6CF5B00E16066 /* Extention.swift in Sources */,
+				E760FDBA2BB6CF8F00E16066 /* ServiceAPI.swift in Sources */,
 				E760FDA92BB6CF2B00E16066 /* ServicesApp.swift in Sources */,
+				E760FDCB2BB6D06800E16066 /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
